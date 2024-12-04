@@ -1,0 +1,204 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #6f00ca, #fab9ff);
+    color: white;
+    min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+    display: flex;
+    flex-direction: column; /* Align items in column for better footer handling */
+}
+
+/* Header Styles */
+header {
+    background-color: #770ecd;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;  /* Adjust the logo size */
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar nav ul li {
+    display: inline;
+}
+
+.navbar nav ul li a, .account {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.account {
+    margin-left: auto; /* Align the account to the right */
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-image: white;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.hero h1 {
+    font-size: 48px; /* Adjusted text size */
+    font-weight: 700;
+    background-color: white;
+    -webkit-background-clip: text;  /* Apply the background clip for gradient effect */
+    background-clip: text;
+    margin-bottom: 20px; /* Increase margin to add space */
+}
+
+.hero p {
+    font-size: 20px;
+    font-weight: 400;
+    background-color: white;
+    -webkit-background-clip: text;
+    background-clip: text;
+    margin-bottom: 5px; /* Increase margin to add space */
+}
+
+.hero button {
+    font-size: 30px;
+    font-weight: 300;
+    background-color: #ff009d;
+    color: white;
+    padding: 25px 30px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* About and Details Sections */
+.about, .details {
+    text-align: center;
+    padding: 50px 50px;
+}
+
+.about h2, .details h2 {
+    padding: -20px; 
+    font-size: 50px;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #ff007f, #ffffff); /* Gradient applied here */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; /* Make the text color transparent so the gradient shows */
+}
+
+.about p, .details p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.video-placeholder, .image-placeholder {
+    width: 90%;  
+    height: 500px;  
+    margin: 20px auto;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: none;  
+}
+
+.highlight {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Footer Styles */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #eca7fa;
+    flex-wrap: wrap;
+    margin-top: 20px; /* Optional: add a bit of margin to space the footer from the content */
+}
+
+.footer-section, .subscribe {
+    flex: 1;
+    margin: 10px;
+}
+
+footer h4 {
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 5px 0;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.subscribe input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.subscribe button {
+    padding: 10px 20px;
+    background-color: #7600eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Clear any unwanted space below the footer */
+footer {
+    margin-bottom: 0;
+}
+
+/* Ensure body takes full height and the footer stays at the bottom */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    margin-top: auto; /* Push the footer to the bottom */
+}

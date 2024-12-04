@@ -1,0 +1,179 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #6f00ca, #fab9ff);
+    color: white;
+}
+
+/* Header Styles */
+header {
+    background-color: #8522d3;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;  /* Adjust the logo size */
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar nav ul li {
+    display: inline;
+}
+
+.navbar nav ul li a, .account {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.account {
+    margin-left: auto; /* Align the account to the right */
+}
+
+/* Ticket info section */
+.ticket-info {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.ticket-info h1 {
+    font-size: 60px;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #ff007f, #a842f4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; /* Make the text color transparent so the gradient shows */
+    margin-bottom: 20px;
+    padding-bottom: 1%;
+}
+
+.ticket-info p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* Ticket options */
+.ticket-option {
+    background-color: #333;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    display: inline-block;
+    width: 30%;
+}
+
+.ticket-option h2 {
+    padding-bottom: 3%;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff007f;
+}
+
+.ticket-option p {
+    font-size: 20px;
+}
+
+.buy-button {
+    background-color: #7600eb;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.buy-button:hover {
+    background-color: #6f00ca;
+}
+
+/* Footer Styles */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #db91f3;
+    flex-wrap: wrap;
+    margin-top: 20px; /* Optional: add a bit of margin to space the footer from the content */
+}
+
+.footer-section, .subscribe {
+    flex: 1;
+    margin: 10px;
+}
+
+footer h4 {
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 5px 0;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.subscribe input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.subscribe button {
+    padding: 10px 20px;
+    background-color: #7600eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Clear any unwanted space below the footer */
+footer {
+    margin-bottom: 0;
+}
+
+/* Ensure body takes full height and the footer stays at the bottom */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    margin-top: auto; /* Push the footer to the bottom */
+}
